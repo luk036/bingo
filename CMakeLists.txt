@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.14 FATAL_ERROR)
 
 # set(USE_STATIC_ANALYZER "clang-tidy")
+
 # option(CPM_USE_LOCAL_PACKAGES "Use Local package" TRUE)
-option(FULL_INSTALLATION "Enable full installation for development/testing" OFF)
+
+option(INSTALL_ONLY "Enable full installation for development/testing" ON)
 
 # ---- Project ----
 
@@ -88,8 +90,8 @@ packageProject(
   DEPENDENCIES "fmt 7.1.3"
 )
 
-if (FULL_INSTALLATION)
+if(NOT INSTALL_ONLY)
   add_subdirectory(test)
   add_subdirectory(standalone)
   add_subdirectory(documentation)
-endif(FULL_INSTALLATION)
+endif()

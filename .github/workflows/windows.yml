@@ -27,7 +27,7 @@ jobs:
           key: ${{ github.workflow }}-cpm-modules-${{ hashFiles('**/CMakeLists.txt', '**/*.cmake') }}
 
       - name: configure
-        run: cmake -S. -Bbuild -DFULL_INSTALLATION=ON
+        run: cmake -S. -Bbuild -DINSTALL_ONLY=OFF
 
       - name: build
         run: cmake --build build --config Debug -j4

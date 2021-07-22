@@ -54,7 +54,7 @@ During development it is usually convenient to [build all subprojects at once](#
 Use the following command to build and run the executable target.
 
 ```bash
-cmake -S. -B build
+cmake -S. -B build -DINSTALL_ONLY=OFF
 cmake --build build
 ./build/standalone/Bingo --help
 ```
@@ -64,7 +64,7 @@ cmake --build build
 Use the following commands from the project's root directory to run the test suite.
 
 ```bash
-cmake -S. -B build
+cmake -S. -B build -DINSTALL_ONLY=OFF
 cmake --build build
 cd build/test
 CTEST_OUTPUT_ON_FAILURE=1 ctest
@@ -81,7 +81,7 @@ Use the following commands from the project's root directory to check and fix C+
 This requires _clang-format_, _cmake-format_ and _pyyaml_ to be installed on the current system.
 
 ```bash
-cmake -S. -B build/test
+cmake -S. -B build -DINSTALL_ONLY=OFF
 
 # view changes
 cmake --build build --target format
@@ -98,7 +98,7 @@ The documentation is automatically built and [published](https://luk036.github.i
 To manually build documentation, call the following command.
 
 ```bash
-cmake -S . -B build
+cmake -S. -B build -DINSTALL_ONLY=OFF
 cmake --build build --target GenerateDocs
 # view the docs
 open build/documentation/doxygen/html/index.html
