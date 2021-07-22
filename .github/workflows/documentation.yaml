@@ -27,7 +27,7 @@ jobs:
 
       - name: Build
         run: |
-          cmake -S. -Bbuild -DINSTALL_ONLY=OFF
+          cmake -S. -Bbuild
           cmake --build build --target GenerateDocs
 
       - name: Publish

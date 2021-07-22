@@ -28,7 +28,7 @@ jobs:
 
       - name: build and install library
         run: |
-          cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release
+          cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release -DINSTALL_ONLY=ON
           sudo cmake --build build --target install
           rm -rf build
 
