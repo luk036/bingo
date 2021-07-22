@@ -3,13 +3,7 @@
 option(ENABLE_TEST_COVERAGE "Enable test coverage" OFF)
 # option(TEST_INSTALLED_VERSION "Test the version found by find_package" OFF)
 
-# --- Import tools ----
-
-include(../cmake/tools.cmake)
-
 # ---- Dependencies ----
-
-include(../cmake/CPM.cmake)
 
 CPMAddPackage("gh:onqtam/doctest#2.4.5")
 CPMAddPackage("gh:TheLartians/Format.cmake@1.7.0")

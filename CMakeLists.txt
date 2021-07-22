@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.14 FATAL_ERROR)
 
+# set(USE_STATIC_ANALYZER "clang-tidy")
+set(CPM_USE_LOCAL_PACKAGES TRUE)
+
 # ---- Project ----
 
 # Note: update this to your new project's name and version
