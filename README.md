@@ -11,8 +11,7 @@
 
 # bingo-cpp (modified from ModernCppStarter)
 
-Note: this project has been changed from ModernCppStarter so that it is more 
-**vscode-friendly**.
+(**Note**: this project has been modified from the original ModernCppStarter so that it is more **vscode-friendly**.)
 
 Setting up a new C++ project usually requires a significant amount of preparation and boilerplate code, even more so for modern C++ projects with tests, executables and continuous integration.
 This template is the result of learnings from many previous projects and should help reduce the work required to setup up a modern C++ project.
@@ -82,7 +81,7 @@ Use the following commands from the project's root directory to check and fix C+
 This requires _clang-format_, _cmake-format_ and _pyyaml_ to be installed on the current system.
 
 ```bash
-cmake -S . -B build/test
+cmake -S. -B build/test
 
 # view changes
 cmake --build build --target format
