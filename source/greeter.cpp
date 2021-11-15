@@ -2,8 +2,9 @@
 #include <fmt/format.h>
 
 using namespace bingo;
+using namespace std;
 
-Bingo::Bingo(std::string _name) : name(std::move(_name)) {}
+Bingo::Bingo(string _name) : name(move(_name)) {}
 
 std::string Bingo::greet(LanguageCode lang) const {
     switch (lang) {

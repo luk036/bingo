@@ -3,14 +3,16 @@
 #include <limits>       // import numric_limits
 #include <type_traits>  // import make_signed
 
+using namespace std;
+
 template <typename T> static void check_unsigned() {
-    auto MAX = std::numeric_limits<T>::max();
+    auto MAX = numeric_limits<T>::max();
 
     auto a = T{MAX};
     auto v = T{MAX / 2};
     auto z = T{0};
-    auto a2 = std::make_signed_t<T>(a - v);
-    auto z2 = std::make_signed_t<T>(z - v);
+    auto a2 = make_signed_t<T>(a - v);
+    auto z2 = make_signed_t<T>(z - v);
     auto a3 = -a2;
     auto z3 = -z2;
     auto a4 = -a3;
