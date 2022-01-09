@@ -1,7 +1,7 @@
-#include <doctest/doctest.h>
+#include <doctest/doctest.h>  // for ResultBuilder, CHECK, TEST_CASE
 
-#include <limits>       // import numric_limits
-#include <type_traits>  // import make_signed
+#include <limits>       // for numeric_limits
+#include <type_traits>  // for make_signed_t
 
 using namespace std;
 
