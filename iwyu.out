@@ -1,0 +1,66 @@
+[0/2] Re-checking globbed directories...
+[1/7] Building CXX object test/CMakeFiles/BingoTests.dir/source/test_integers.cpp.o
+Warning: include-what-you-use reported diagnostics:
+
+/data/data/com.termux/files/home/github/bingo-cpp/test/source/test_integers.cpp should add these lines:
+#include <__config>           // for std
+
+/data/data/com.termux/files/home/github/bingo-cpp/test/source/test_integers.cpp should remove these lines:
+
+The full include-list for /data/data/com.termux/files/home/github/bingo-cpp/test/source/test_integers.cpp:
+#include <doctest/doctest.h>  // for ResultBuilder, CHECK, TEST_CASE
+#include <__config>           // for std
+#include <limits>             // for numeric_limits
+#include <type_traits>        // for make_signed_t
+---
+
+[2/7] Building CXX object CMakeFiles/Bingo.dir/source/greeter.cpp.o
+Warning: include-what-you-use reported diagnostics:
+
+/data/data/com.termux/files/home/github/bingo-cpp/include/bingo/greeter.h should add these lines:
+#include <iosfwd>  // for string
+
+/data/data/com.termux/files/home/github/bingo-cpp/include/bingo/greeter.h should remove these lines:
+
+The full include-list for /data/data/com.termux/files/home/github/bingo-cpp/include/bingo/greeter.h:
+#include <iosfwd>  // for string
+#include <string>  // for basic_string
+---
+
+/data/data/com.termux/files/home/github/bingo-cpp/source/greeter.cpp should add these lines:
+#include <__config>      // for std
+#include <type_traits>   // for move
+
+/data/data/com.termux/files/home/github/bingo-cpp/source/greeter.cpp should remove these lines:
+
+The full include-list for /data/data/com.termux/files/home/github/bingo-cpp/source/greeter.cpp:
+#include <bingo/greeter.h>
+#include <fmt/format.h>  // for format
+#include <__config>      // for std
+#include <type_traits>   // for move
+---
+
+[3/7] Linking CXX static library libBingo.a
+[4/7] Building CXX object test/CMakeFiles/BingoTests.dir/source/main.cpp.o
+[5/7] Linking CXX executable test/BingoTests
+[6/7] Building CXX object standalone/CMakeFiles/BingoStandalone.dir/source/main.cpp.o
+Warning: include-what-you-use reported diagnostics:
+
+/data/data/com.termux/files/home/github/bingo-cpp/standalone/source/main.cpp should add these lines:
+#include <memory>           // for shared_ptr
+#include <utility>          // for pair
+
+/data/data/com.termux/files/home/github/bingo-cpp/standalone/source/main.cpp should remove these lines:
+
+The full include-list for /data/data/com.termux/files/home/github/bingo-cpp/standalone/source/main.cpp:
+#include <bingo/greeter.h>  // for LanguageCode, Bingo, LanguageCode::DE
+#include <bingo/version.h>  // for BINGO_VERSION
+#include <cxxopts.hpp>      // for value, OptionAdder, Options, OptionValue
+#include <iostream>         // for string, operator<<, endl, basic_ostream
+#include <memory>           // for shared_ptr
+#include <string>           // for char_traits, hash, operator==
+#include <unordered_map>    // for operator==, unordered_map, __hash_map_con...
+#include <utility>          // for pair
+---
+
+[7/7] Linking CXX executable standalone/Bingo
