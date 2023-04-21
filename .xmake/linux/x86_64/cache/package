@@ -1,0 +1,48 @@
+{
+    doctest = {
+        version = "2.4.9",
+        envs = {
+            LD_LIBRARY_PATH = {
+                "/home/lubuntu/.config/.xmake/packages/d/doctest/2.4.9/a6fdd16942484cf28de7ce2a2831258f/lib"
+            }
+        },
+        installdir = "/home/lubuntu/.config/.xmake/packages/d/doctest/2.4.9/a6fdd16942484cf28de7ce2a2831258f",
+        __requirestr = "doctest",
+        sysincludedirs = "/home/lubuntu/.config/.xmake/packages/d/doctest/2.4.9/a6fdd16942484cf28de7ce2a2831258f/include",
+        __enabled = true,
+        __requireconfs = {
+            alias = "doctest"
+        }
+    },
+    benchmark = {
+        syslinks = "pthread",
+        linkdirs = "/home/lubuntu/.config/.xmake/packages/b/benchmark/1.7.0/f560adeb922d4838b5ce55f080617dbb/lib",
+        __enabled = true,
+        __requirestr = "benchmark",
+        installdir = "/home/lubuntu/.config/.xmake/packages/b/benchmark/1.7.0/f560adeb922d4838b5ce55f080617dbb",
+        envs = {
+            LD_LIBRARY_PATH = {
+                "/home/lubuntu/.config/.xmake/packages/b/benchmark/1.7.0/f560adeb922d4838b5ce55f080617dbb/lib",
+                "/home/lubuntu/.config/.xmake/packages/c/cmake/3.24.2/68b116f83c5c4fb1b93d0f5f7a07021e/lib"
+            },
+            PATH = {
+                "/home/lubuntu/.config/.xmake/packages/c/cmake/3.24.2/68b116f83c5c4fb1b93d0f5f7a07021e/bin"
+            }
+        },
+        version = "1.7.0",
+        license = "Apache-2.0",
+        static = true,
+        links = {
+            "benchmark_main",
+            "benchmark"
+        },
+        sysincludedirs = "/home/lubuntu/.config/.xmake/packages/b/benchmark/1.7.0/f560adeb922d4838b5ce55f080617dbb/include",
+        libfiles = {
+            "/home/lubuntu/.config/.xmake/packages/b/benchmark/1.7.0/f560adeb922d4838b5ce55f080617dbb/lib/libbenchmark_main.a",
+            "/home/lubuntu/.config/.xmake/packages/b/benchmark/1.7.0/f560adeb922d4838b5ce55f080617dbb/lib/libbenchmark.a"
+        },
+        __requireconfs = {
+            alias = "benchmark"
+        }
+    }
+}

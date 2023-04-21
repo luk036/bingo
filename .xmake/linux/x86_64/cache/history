@@ -1,0 +1,8 @@
+{
+    cmdlines = {
+        "xmake lua /home/lubuntu/.local/share/xmake/actions/build/statistics.lua",
+        "xmake ",
+        "xmake lua /home/lubuntu/.local/share/xmake/actions/build/cleaner.lua",
+        "xmake run"
+    }
+}
