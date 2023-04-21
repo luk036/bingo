@@ -4,6 +4,8 @@
 #include <limits>      // for numeric_limits
 #include <type_traits> // for make_signed_t
 
+#include <concepts>
+
 using namespace std;
 
 template <typename T> static void check_unsigned() {
